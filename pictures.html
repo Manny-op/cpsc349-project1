@@ -1,0 +1,16 @@
+---
+title: Pictures
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{{ title }} - {{ site }}</title>
+        <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    </head>
+    <figure>
+        {% for picture in photos.0apgfsq.media -%}
+        <img src="{{ picture.src.tiny }}" alt="{{ picture.alt }}">
+        {% endfor -%}
+    </figure>
+
+</html>

@@ -6,11 +6,17 @@ title: Home
     <h1>{{ title }} </h1>
 </header>
 
-<footer>
-    <hr>
-    <p>
-        <small>
-            <a href="https://www.pexels.com">Photos provided by Pexels</a>
-        </small>
-    </p>
-</footer>
+
+<h3>We have chosen the image collection that is all about music!</h3>
+
+<!-- Image thumbnails -->
+<figure>
+    {% for picture in photos.0apgfsq.media -%}
+    <a href="{{ picture.src.tiny }}">
+        <img src="{{ picture.src.tiny }}" alt="{{ picture.alt }}">
+    </a>
+    {% endfor -%}
+</figure>
+<!-- End image thumbnails -->
+
+
