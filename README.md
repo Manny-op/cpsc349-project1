@@ -3,7 +3,7 @@
 Clone the cpsc349-project1 repository locally:
 
 ```shell-session
-git clone https://github.com/ProfAvery/cpsc349-project1.git
+git clone https://github.com/shatfield4/cpsc349-project1.git
 ```
 
 Install and start the [Eleventy static site generator][1]:
