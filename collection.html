@@ -1,0 +1,17 @@
+---
+layout: base
+title: Collection
+---
+<header>
+    <h1>{{ title }} </h1>
+</header>
+
+<!-- Image thumbnails -->
+<figure>
+    {% for picture in photos.0apgfsq.media -%}
+    <a href="pictures/{{ picture.id }}">
+        <img src="{{ picture.src.tiny }}" alt="{{ picture.alt }}">
+    </a>
+    {% endfor -%}
+</figure>
+<!-- End image thumbnails -->
