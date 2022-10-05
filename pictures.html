@@ -1,16 +1,19 @@
 ---
-title: Pictures
+layout: pictures
+pagination:
+    data: photos.0apgfsq.media
+    size: 1
+    alias: image
+permalink: "/pictures/{{ image.id }}/index.html"
 ---
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>{{ title }} - {{ site }}</title>
         <link rel="stylesheet" href="https://unpkg.com/mvp.css">
     </head>
     <figure>
-        {% for picture in photos.0apgfsq.media -%}
-        <img src="{{ picture.src.tiny }}" alt="{{ picture.alt }}">
-        {% endfor -%}
+        <img src="{{ image.src.large }}" alt="{{ image.alt }}">
     </figure>
+    <p>{{  }}</p>
 
 </html>
