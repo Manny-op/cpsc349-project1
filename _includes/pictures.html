@@ -6,9 +6,10 @@ site: Image Page
     <head>
         <title>{{ title }} - {{ site }}</title>
         <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+        
     </head>
-
-    <body>
+    
+    <body style="background-color: {{image.avg_color}};">
         <!-- Nav -->
         <nav>
             <ul>
@@ -24,6 +25,8 @@ site: Image Page
         <center>
             <h1>Photographer: {{ image.photographer }}</h1>
             <h3>{{ image.alt }}</h3>
+            
+             
         </center>
         
         <!-- Footer -->
