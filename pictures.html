@@ -1,23 +1,14 @@
 ---
 layout: pictures
+title: Picture
 pagination:
     data: photos.0apgfsq.media
     size: 1
     alias: image
 permalink: "/pictures/{{ image.id }}/index.html"
 ---
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <link rel="stylesheet" href="https://unpkg.com/mvp.css">
-    </head>
-        <figure>
-            <center>
-                <img src="{{ image.src.large }}" alt="{{ image.alt }}">
-            </center>
-        </figure>
-
-        <p>{{  }}</p>
-    
-
-</html>
+<header>
+    <figure>
+        <img src="{{ image.src.large }}" alt="{{ image.alt }}">
+    </figure>    
+</header>

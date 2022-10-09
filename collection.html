@@ -9,7 +9,7 @@ title: Collection
 <!-- Image thumbnails -->
 <figure>
     {% for picture in photos.0apgfsq.media -%}
-    <a href="pictures/{{ picture.id }}">
+    <a href="/pictures/{{ picture.id }}">
         <img src="{{ picture.src.tiny }}" alt="{{ picture.alt }}">
     </a>
     {% endfor -%}
